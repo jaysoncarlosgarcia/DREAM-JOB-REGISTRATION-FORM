@@ -23,7 +23,7 @@
 <body>
 	<?php $getEmployeeByID = getEmployeeByID($pdo, $_GET['employee_id']); ?>
 	<form action="core/handleForms.php" method="POST">
-    <input type="hidden" name="employee_id" value="<?php echo $_GET['employee_id']; ?>">
+    	<input type="hidden" name="employee_id" value="<?php echo $_GET['employee_id']; ?>">
 		<p>
 			<label for="firstName">First Name</label> 
 			<input type="text" name="firstName" value="<?php echo $getEmployeeByID['first_name']; ?>">
